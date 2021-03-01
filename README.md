@@ -19,10 +19,10 @@
 * ./server port 启动服务器
 * 浏览器端输入 ip:port 访问页面
 
-![QQ截图20210301231726](image\QQ截图20210301231726.png)
+![QQ截图20210301231726](https://github.com/hape2550505/Myserver/tree/master/image/QQ截图20210301231726.png)
 
-![QQ截图20210301231837](image\QQ截图20210301231837.png)
+![QQ截图20210301231837](https://github.com/hape2550505/Myserver/tree/master/image/QQ截图20210301231837.png)
 
 ## 压力测试
 
-60M宽带 4核2.5GHz 4G内存 测试为6kQPS（主要受网速限制）![image-20210115100525443](image\image-20210115100525443.png)
+60M宽带 4核2.5GHz 4G内存 测试为6kQPS（主要受网速限制）![image-20210115100525443](https://github.com/hape2550505/Myserver/tree/master/image/image-20210115100525443.png)
