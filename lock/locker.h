@@ -87,15 +87,15 @@ public:
     {
         int ret = 0;
         //pthread_mutex_lock(&m_mutex);
-        ret = pthread_cond_wait(&m_cond, m_mutex);
+        ret = pthread_cond_wait(&m_cond, m_mutex); //有信号返回0
         //pthread_mutex_unlock(&m_mutex);
-        return ret == 0;
+        return ret == 0;//有信号返回1
     }
     bool timewait(pthread_mutex_t *m_mutex, struct timespec t)
     {
         int ret = 0;
         //pthread_mutex_lock(&m_mutex);
-        ret = pthread_cond_timedwait(&m_cond, m_mutex, &t);
+        ret = pthread_cond_timedwait(&m_cond, m_mutex, &t);//只等待一段时间 有信号返回0
         //pthread_mutex_unlock(&m_mutex);
         return ret == 0;
     }
@@ -105,7 +105,7 @@ public:
     }
     bool broadcast()
     {
-        return pthread_cond_broadcast(&m_cond) == 0;
+        return pthread_cond_broadcast(&m_cond) == 0;//释放所有阻塞在这个锁的线程
     }
 
 private:
